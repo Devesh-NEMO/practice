@@ -34,14 +34,19 @@ function binary(x){
     return x.toString(2)
 }
 function isEven(x){
-    return x % 2
+    return x % 2 === 0
+}
+function greater4(x){
+    return x >= 4
 }
 const output = arr.map(double)
 const output2 = arr.map(triple)
 const output3 = arr.map(binary)
 const output4 = arr.map((x) => x.toString(4) )
 const output5 = a.filter(isEven)
+const out = a.filter(greater4)
 
 
-console.log(output,output2,output3,output4,output5);
+console.log(output,output2,output3,output4,output5,out);
+
 
